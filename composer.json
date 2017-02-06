@@ -10,7 +10,9 @@
         "behat/behat": "^3.3",
         "behat/mink-extension": "^2.2",
         "instaclick/php-webdriver": "^1.4",
-        "jacker/mink-legacy-driver": "dev-master"
+        "jacker/mink-legacy-driver": "dev-master",
+        "behat/mink-browserkit-driver": "^1.3",
+        "symfony/http-kernel": "^3.2"
     },
     "repositories": [
         {
@@ -18,5 +20,4 @@
             "url": "https://github.com/jon-acker/mink-legacy-driver.git"
         }
     ]
-
 }
