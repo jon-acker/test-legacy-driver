@@ -1,0 +1,12 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext: ~
+  extensions:
+    Jacker\LegacyDriver: ~
+    Behat\MinkExtension:
+      base_url: 'http://local.dev/'
+      sessions:
+        default:
+          legacy: ~
