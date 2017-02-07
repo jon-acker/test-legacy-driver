@@ -1,9 +1,5 @@
 <?php
 
-use Behat\Behat\Tester\Exception\PendingException;
-use Behat\Behat\Context\Context;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
 use Behat\MinkExtension\Context\MinkContext;
 
 /**
@@ -20,13 +16,5 @@ class FeatureContext extends MinkContext
      */
     public function __construct()
     {
-    }
-
-    /**
-     * @When I load the page :page
-     */
-    public function iLoadThePage($page)
-    {
-        $this->visit($page);
     }
 }

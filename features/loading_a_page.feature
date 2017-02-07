@@ -1,11 +1,11 @@
 Feature: Loading a page
 
-
   Scenario: Loading the home page
-    When I load the page "/"
-    Then I should see "Welcome to Legacy"
-
+    Given I am on "/"
+    Then the response status code should be 200
+    And I should see "Welcome to Legacy"
 
   Scenario: Loading the list page
-    When I load the page "/list"
-    Then I should see "1 2 3"
+    Given I am on "/list"
+    Then the response status code should be 200
+    And I should see "1 2 3"
